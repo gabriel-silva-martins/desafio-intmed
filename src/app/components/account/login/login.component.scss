@@ -1,0 +1,66 @@
+.container {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  height: 32px;
+  align-items: flex-start;
+  border: solid 2px transparent;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 4px;
+  font-size: 12px;
+  gap: 20px;
+}
+
+.input-wrapper {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+img.logo {
+  height: 50px;
+}
+
+.input-wrapper input {
+  background-color: transparent;
+}
+
+.login-container img.password {
+  height: 50px;
+  position: fixed;
+  transform: translate(345px, 120px);
+}
+
+.login-container img:not(:first-child) {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.input-wrapper input:focus-visible {
+  outline: none !important;
+  outline-offset: none !important;
+}
+
+.remember-password {
+  display: flex;
+  gap: 10px;
+}
+
+.remember-password p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #A8A8A8;
+}

@@ -1,0 +1,12 @@
+<button
+  [ngClass]="checkButtonStyle()"
+  [disabled]="disabled || isLoading"
+  [style]="imageValue ? 'padding: 0' : ''"
+  type="button"
+  (click)="click()"
+>
+  <img *ngIf="imageButton() && !isLoading" [src]="imageValue" alt="img" />
+
+  <span [ngClass]="spanButtonImg()" *ngIf="!isLoading">{{ value }}</span>
+  <span [ngClass]="spanButtonImg()" *ngIf="isLoading"></span>
+</button>

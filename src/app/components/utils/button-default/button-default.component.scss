@@ -1,0 +1,56 @@
+.button-disabled {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #90D3D7;
+  color: #FFFFFF;
+  border: none;
+}
+
+.button-primary-blue {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #49b4bb;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button-secondary-blue {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #D9F1F3;
+  color: #49B4BB;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button-primary-blue-disabled {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #90D3D7;
+  color: #FFFFFF;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button-white {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  color: #49B4BB;
+  border: none;
+  cursor: pointer;
+}

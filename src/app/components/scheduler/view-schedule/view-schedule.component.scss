@@ -1,0 +1,65 @@
+.header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.user-info-action {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+p.disconect {
+  font-weight: 400;
+  font-size: 13px;
+  color: #49B4BB;
+  cursor: pointer;
+}
+
+p.connected-user {
+  font-weight: 400;
+  font-size: 13px;
+  color: #A8A8A8;
+}
+
+img.logo {
+  height: 25px;
+}
+
+div.table {
+  border: 0.5px solid transparent;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 630px;
+  height: 488px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+h2.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #444444;
+}
+
+div.top-infos {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A8A8A8;
+  text-transform: uppercase;
+}
+
+div.table-headers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+}

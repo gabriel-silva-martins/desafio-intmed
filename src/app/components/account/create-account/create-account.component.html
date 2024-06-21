@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="login-container">
+    <img class="logo" src="/assets/logo.png" alt="Medicar logo oficial" />
+    <h2>Crie sua conta</h2>
+    <input class="default-input" type="text" placeholder="Nome" />
+    <input class="default-input" type="email" placeholder="Email" />
+    <input
+      class="default-input password-input"
+      [type]="isPasswordVisible1 ? 'text' : 'password'"
+      placeholder="Senha"
+    />
+    <img
+      class="password-1"
+      *ngIf="!isPasswordVisible1"
+      src="/assets/icon_password-hidden.svg"
+      alt="Ícone olho"
+      (click)="handleIsPasswordVisible1()"
+    />
+    <img
+      class="password-1"
+      *ngIf="isPasswordVisible1"
+      src="/assets/icon_password-visible.svg"
+      alt="Ícone olho"
+      (click)="handleIsPasswordVisible1()"
+    />
+    <input
+      class="default-input password-input"
+      [type]="isPasswordVisible2 ? 'text' : 'password'"
+      placeholder="Confirmar Senha"
+    />
+    <img
+      class="password-2"
+      *ngIf="!isPasswordVisible2"
+      src="/assets/icon_password-hidden.svg"
+      alt="Ícone olho"
+      (click)="handleIsPasswordVisible2()"
+    />
+    <img
+      class="password-2"
+      *ngIf="isPasswordVisible2"
+      src="/assets/icon_password-visible.svg"
+      alt="Ícone olho"
+      (click)="handleIsPasswordVisible2()"
+    />
+
+    <div class="buttons">
+      <app-button-default
+        value="Cancelar"
+        theme="secondary-blue"
+        (click)="navigateToLogin()"
+      ></app-button-default>
+      <app-button-default
+        value="Confirmar"
+        theme="primary-blue"
+      ></app-button-default>
+    </div>
+  </div>
+</div>

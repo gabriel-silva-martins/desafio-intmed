@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="login-container">
+    <img class="logo" src="/assets/logo.png" alt="Medicar logo oficial" />
+    <input class="default-input" type="text" placeholder="Email ou Login" />
+    <input
+      class="default-input password-input"
+      [type]="isPasswordVisible ? 'text' : 'password'"
+      placeholder="Senha"
+    />
+    <img
+      class="password"
+      *ngIf="!isPasswordVisible"
+      src="/assets/icon_password-hidden.svg"
+      alt="Ícone olho"
+      (click)="handleIsPasswordVisible()"
+    />
+    <img
+      class="password"
+      *ngIf="isPasswordVisible"
+      src="/assets/icon_password-visible.svg"
+      alt="Ícone olho"
+      (click)="handleIsPasswordVisible()"
+    />
+
+    <div class="remember-password">
+      <input type="checkbox" />
+      <p>Lembrar minha senha</p>
+    </div>
+
+    <div class="buttons">
+      <app-button-default
+        value="Criar conta"
+        theme="secondary-blue"
+        (click)="navigateToCreateAccount()"
+      ></app-button-default>
+      <app-button-default
+        value="Acessar"
+        theme="primary-blue"
+      ></app-button-default>
+    </div>
+  </div>
+</div>
